@@ -19,3 +19,8 @@ pip install -r requirements.txt
 - name: Run Tests
 run: |
 python -m unittest discover
+- name: Upload Build Artifact
+uses: actions/upload-artifact@v4
+with:
+name: build-files
+path: dist/
